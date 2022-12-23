@@ -155,7 +155,7 @@ ol{
     height: 100%;
     position: absolute;
     overflow: hidden;
-    transform: translateX(-120%);
+    transform: translateX(120%);
     transition: transform .5s ease;
 }
 .questionsContainer .question{
@@ -190,5 +190,5 @@ ol{
     background-color: green;
 }
 .questionActive{
-    transform: translateX(0);
+    transform: translateX(0%);
 }

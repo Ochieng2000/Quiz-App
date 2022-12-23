@@ -53,11 +53,12 @@ function nextQuestionButton(){
                 if(index < questionInnerContainer.length-1){
                     questionInnerContainer[index +1].classList.add('questionActive');
                     questionCounter.textContent = counter++;
-                    nextBtn.innerHTML = "Submit Answers";
-                }
-                else{
+                    if(counter == 10){
+                        nextBtn.innerHTML = "Submit Answers";
+                    }
                     
                 }
+                
                 
                 break;
             }
