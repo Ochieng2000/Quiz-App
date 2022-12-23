@@ -192,3 +192,39 @@ ol{
 .questionActive{
     transform: translateX(0%);
 }
+.quizOuterContainer:has(.success){
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.head{
+    width: 100%;
+    text-align: center;
+    color: #000;
+
+}
+.success{
+    width: 100%;
+    height: auto;
+    color: green;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+}
+.exit{
+    width: 120px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.863);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.success:has(.not){
+    color: #fff
+}
+.not{
+    color: #000;
+    font-weight: 900;
+}
