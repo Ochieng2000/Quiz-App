@@ -175,7 +175,7 @@ ol{
     cursor: pointer;
 }
 .choice:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    border:1px solid rgba(0, 0, 0, 0.5);
 }
 .nextQuestion{
     position: absolute;
@@ -227,4 +227,27 @@ ol{
 .not{
     color: #000;
     font-weight: 900;
+}
+.selectedChoice{
+    background-color: #2596be;
+}
+.pointer{
+    pointer-events: none;
+}
+@media (max-width: 660px){
+    .allquizes, .categoryContainer{
+        width: 98%;
+    }
+}
+@media (max-width: 430px){
+    .diffOption, .typeOption, .quizCategories{
+        width: 85%;        
+    }
+    .gameControls{
+        width: 100%;
+    }
+    .gameControls > *{
+        width: max-content;
+        padding: 0 10px 0 10px;
+    }
 }
